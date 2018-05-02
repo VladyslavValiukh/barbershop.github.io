@@ -4,10 +4,8 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    link(rel='stylesheet', href='../scss/index.css')
+    link(rel='stylesheet', href='../scss/main.css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat+Alternates', rel='stylesheet')
-    .container
-      .row
     title Барбершоп Uniq
   body
     header
@@ -16,15 +14,15 @@ html(lang='en')
           .row
             ul.ul_menu
               li.active
-                a(href='/main') Главная
+                a(href='#') Главная
               li
-                a(href='/about') О нас
+                a(href='#') О нас
               li
-                a(href='/prices') Цены
+                a(href='#') Цены
               li
-                a(href='/gallery') Наши работы
+                a(href='#') Наши работы
               li
-                a(href='/contacts') Контакты
+                a(href='#') Контакты
       .top_line
         .container
           .row
@@ -44,7 +42,8 @@ html(lang='en')
                   br
                   | +380
                   span (96)6891007
-      .services.clearfix
+    .bgcol
+      .services
         .services__item
           img.ph1(src='../img/barber.jpg', alt='barber')
           p
