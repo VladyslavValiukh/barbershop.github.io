@@ -6,6 +6,7 @@ const port = 3001;
 app.listen(port, () => {
   console.log(`Server is listening on the port ${port}`);
 });
+
 app.get('/', (req, res) => {
   res.send(
 pug.renderFile(
