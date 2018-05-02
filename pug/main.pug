@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='../scss/index.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat+Alternates', rel='stylesheet')
+    .container
+      .row
+    title Барбершоп Uniq
+  body
+    header
+      nav.top_mnu
+        .container
+          .row
+            ul.ul_menu
+              li.active
+                a(href='/main') Главная
+              li
+                a(href='/about') О нас
+              li
+                a(href='/prices') Цены
+              li
+                a(href='/gallery') Наши работы
+              li
+                a(href='/contacts') Контакты
+      .top_line
+        .container
+          .row
+            .col-md-4
+              .top_adr
+                strong Киев
+                a.fancybox(href='#map') ул. Большая Житомирская 8
+            .col-md-4
+              .logo_wrap
+                a.logo(href='#')
+                  img.logo_barb(src='../img/icons.jpg', alt='Барбершоп')
+            .col-md-4
+              .top_adr.ta_right
+                strong
+                  | +380
+                  span (98)1079974
+                  br
+                  | +380
+                  span (96)6891007
+      .services.clearfix
+        .services__item
+          img.ph1(src='../img/barber.jpg', alt='barber')
+          p
+        .services__item
+          .serv
+            p
+              | Заведение представляет собой современный мужской клуб, где можно подстричься без лишней выдумки – со вкусом, стильно и сдержанно. Кроме стрижек волос мы предоставляем услуги по стрижке бороды и усов, бритье опасной бритвой, камуфлирование седины, а также профессиональная укладка волос.
+              | В нашем барбершопе Вас всегда обслужат спокойные и опытные мастера, знающие толк в традиционных методиках.
+            p
+              | Главный акцент — высокий уровень профессионализма сотрудников и особая атмосфера.
+              | Barbershop Uniq
+              br
+              |  — это место для мужчин, которые смотрят в будущее, но при этом уважают и ценят традиции!
+    footer
+      .footer1
+        .col-1
+          p.footer__name
+            | © 2018 Uniq barbershop®
+            br
+            | Особое место для современных волевых мужчин!
+        .col-1
+          p.footer__name
+            | Наши партнеры:
+            br
+            | Uniq webstudio
+        .col-1
+          p.footer__name
+            | Почта:  laninegor11@gmail.com
+            br
+            | vladyslav.valiukh@gmai.com
