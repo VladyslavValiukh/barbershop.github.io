@@ -226,7 +226,7 @@ background-repeat: none }
   border-radius: 10px;
   background-image:url(../img/texture-noise@1x.png); 
   background-color:#f5f1dd;
- opacity:0.9; 
+ opacity:0.95; 
 }
 .rightext{
   padding-left: 10%;
