@@ -9,20 +9,7 @@ html(lang='en')
     title Барбершоп Uniq
   body
     header
-      nav.top_mnu
-        .container
-          .row
-            ul.ul_menu
-              li.active
-                a(href='#') Главная
-              li
-                a(href='#') О нас
-              li
-                a(href='#') Цены
-              li
-                a(href='#') Наши работы
-              li
-                a(href='#') Контакты
+      include header.pug
       .top_line
         .container
           .row
@@ -61,16 +48,23 @@ html(lang='en')
       .footer1
         .col-1
           p.footer__name
-            | © 2018 Uniq barbershop®
+            span © 2018 Uniq barbershop®
             br
             | Особое место для современных волевых мужчин!
-        .col-1
+        .col-2
           p.footer__name
-            | Наши партнеры:
+            span Наши партнеры:
             br
             | Uniq webstudio
-        .col-1
+          a.icons_footer(href='#')
+            img.icons_foot(src='../img/inst.png', alt='Instagram')
+          a.icons_footer(href='#')
+            img.icons_foot1(src='../img/face.png', alt='facebook')
+          a.icons_footer(href='#')
+            img.icons_foot2(src='../img/twit.png', alt='Twitter')
+        .col-3
           p.footer__name
-            | Почта:  laninegor11@gmail.com
+            span Почта:
+            |   laninegor11@gmail.com
             br
             | vladyslav.valiukh@gmai.com

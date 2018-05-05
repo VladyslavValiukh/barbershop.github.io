@@ -1,41 +1,31 @@
 doctype HTML5
 html
   head
-    link(rel="stylesheet" href="../scss/style.css") 
+    link(rel="stylesheet" href="../scss/footer.css")
+    link(rel="stylesheet" href="../scss/header.css")
+    link(rel="stylesheet" href="../scss/about.css")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat+Alternates', rel='stylesheet')
+    script(src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js')
     meta(charset = 'utf-8')
     meta(name='viewport', content="initial-scale=1.0, width=device-width")
   body
-    header
-      .top_line
-        .container
-          .row
-            .col-md-4
-              .top_adr
-                strong Киев
-                a.fancybox(href='#map') ул. Большая Житомирская 8
-            .col-md-4
-              .logo_wrap
-                a.logo(href='#')
-                  img.logo_barb(src='../img/icons.jpg', alt='Барбершоп')
-            .col-md-4
-              .top_adr.ta_right
-                strong
-                  | +380
-                  span (98)1079974
-                  br
-                  | +380
-                  span (96)6891007
-    nav.top_mnu
-      .container
-        .row
-          ul
-            li.active
-              a(href='#') Главная
-            li
-              a(href='#') О нас
-            li
-              a(href='#') Цены
-            li
-              a(href='#') Наши работы
-            li
-              a(href='#') Контакты
+    include header.pug
+    include footer.pug
+    .my_slider
+      h1 My Basic Slider
+      #slider
+        a.control_next >
+        a.control_prev <
+        ul
+          li 
+            img(src="../img/b1.jpg")
+          li(style='background: #aaa;')
+            img(src="../img/b1.jpg")
+          li 
+            img(src="../img/b1.jpg")
+          li(style='background: #aaa;') 
+            img(src="../img/b1.jpg")
+      .slider_option
+        input#checkbox(type='button')
+        label(for='checkbox') Autoplay Slider
+    script(src="../js/slider.js")
