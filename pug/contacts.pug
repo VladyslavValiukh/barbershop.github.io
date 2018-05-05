@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title 
+    link(href='../scss/contacts.min.css', rel='stylesheet')
+    link(rel="stylesheet" href="../scss/footer.css")
+    link(rel="stylesheet" href="../scss/header.css")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat+Alternates', rel='stylesheet')
+  body
+    include header.pug
+    .nur
+    .forma
+      .map-block
+        .map#map
+        h3
+          | Салон-парикмахерская «Nikita» находится в Киеве в районе Севастопольской площади, неподалеку от Соломенского рынка. Так-же, наши салоны находятся и в других точках Киева.
+      .form-block  
+        form#application(action=' application.php', method='POST', name=' application ')
+          input#applicationName(name='name', maxlength='20', placeholder='Введите ваше имя', required='')
+          input#applicationEmail(name='email', type='email', maxlength='20', placeholder='Введите ваш E-mail', required='')
+          input#applicationTelephone(name='telephone', type='Tel', maxlength='20', placeholder='Введите ваш телефон', required='')
+          button.applicationButton(type='submit', form='application') Записаться к мастеру
+    include footer.pug
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCXjLLK2ijNsCZypxcAdulpU4fRvJu_BnI&callback=initMap', async='', defer='')
+    script(src='../js/maps.js')
+    
+    

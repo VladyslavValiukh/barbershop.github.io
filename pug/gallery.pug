@@ -1,0 +1,80 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    link(href='../scss/gallery.min.css', rel='stylesheet')
+    link(rel="stylesheet" href="../scss/footer.css")
+    link(rel="stylesheet" href="../scss/header.css")
+    link(rel="stylesheet" href="../scss/about.css")
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css')
+    script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+  body
+    include header.pug
+    .first
+      .block1
+        img(src='./img/fd1.jpg', alt='block1')
+      .block2
+        img(src='./img/fd2.jpg', alt='block1')
+      .block3
+        img(src='./img/fd3.jpg', alt='block1')
+      .block4
+        img(src='./img/fd4.jpg', alt='block1')
+      .block5
+        img(src='./img/fd5.jpg', alt='block1')
+    .true_crashed_mirror
+      .part
+        .one
+          img(src="../img/1block.png")
+        .two
+          img(src="../img/2block.png")
+        .three
+          img(src="../img/3block.png")
+        //- img(src="../img/4block.png")#4block
+        //- img(src="../img/5block.png")
+        //- img(src="../img/6block.png")#6block
+        //- img(src="../img/7block.png")#7block
+        //- img(src="../img/8block.png")#8block
+        //- img(src="../img/9block.png")#9block
+        //- 
+    //- .crashed_mirror
+    //-   .second#img1
+    //-     img(src='./img/b4.jpg', alt='second')
+    //-   .third#img2
+    //-     img(src='./img/b5.jpg', alt='second')
+    //-   .chetiri#img3
+    //-     img(src='./img/b1.jpg', alt='second')
+    //-   .pat#img4
+    //-     img(src='./img/b2.jpg', alt='second')
+    //-   .treyg#img5
+    //-     img(src='./img/fd2.jpg', alt='second')
+    //-   .maz1#img6
+    //-     img(src='./img/fd2.jpg', alt='second')
+    //-   .maz2#img7
+    //-     img(src='./img/fd1.jpg', alt='second')
+    //-   .maz3#img8
+    //-     img(src='./img/fd4.jpg', alt='second')
+    //-   .maz4#img9
+    //-     img(src='./img/b6.jpg', alt='second')
+    //- .my_slider
+    //-         h1 My Basic Slider
+    //-         #slider
+    //-           a.control_next >
+    //-           a.control_prev <
+    //-           ul
+    //-             li 
+    //-               img(src="../img/b1.jpg")
+    //-             li(style='background: #aaa;')
+    //-               img(src="../img/b1.jpg")
+    //-             li 
+    //-               img(src="../img/b1.jpg")
+    //-             li(style='background: #aaa;') 
+    //-               img(src="../img/b1.jpg")
+    //-         .slider_option
+    //-           input#checkbox(type='button')
+    //-           label(for='checkbox') Autoplay Slider
+    include footer.pug
+    script(src='//code.jquery.com/jquery-1.12.4.js')
+    script(src='//code.jquery.com/ui/1.12.1/jquery-ui.js')
+    script(src='../js/shake.js')
+    script(src="../js/slider.js")
