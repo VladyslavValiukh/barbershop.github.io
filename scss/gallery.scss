@@ -4,7 +4,7 @@ body{
   width:100%;
   height: auto;
   background-color: #f5f1dd;
-  background-image: url('../img/white-wood-texture-3.jpg');
+  background-image: url('../img/wood-texture-7.jpg');
   background-size: contain;
   background-position: top center;
   background-repeat:repeat-y;
@@ -40,117 +40,109 @@ img{
   width:50%;
   height:auto;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 .first{
   width:100%;
   display: flex;
   justify-content: space-between;
 }
-.block1 {
-  width: 15%;
-  height: 500px;
-  background-color: black;
-  top: 16%;
-  left: 4%;
-  font-size: 24px;
-  transition-duration: 2s, 3s;
-}
 
-
-
-.block2 {
-  width: 15%;
-  height: 500px;
-  background-color: black;
-  top: 16%;
-  left: 23%;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(./img/f2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: -webkit-center;
-}
-
-.block3 {
-  width: 15%;
-  height: 500px;
-  background-color: black;
-  top: 16%;
-  left: 42%;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(./img/a3.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.block4 {
-  width: 15%;
-  height: 500px;
-  background-color: black;
-  top: 16%;
-  left: 61%;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(./img/a4.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.block5 {
-  width: 5%;
-  height: 500px;
-  background-color: black;
-  top: 16%;
-  left: 80%;
-  display: flex;
-  justify-content: space-between;
-  background-image: url(./img/a5.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: left;
-}
 .true_crashed_mirror{
   width:100%;
+  height:auto;
+  position:static;
   .part{
     width:100%;
-      .one{
-        position:absolute;
-        left:100px;
-        img{
-          width:40%;
-        }
+    .one{
+      position:absolute;
+      left:100px;
+      img{
+        width:40%;
+        height:300px;
       }
-      .two{
-        position: absolute;
-        left:400px;
-        margin-top:0;
-        img{
-          width:50%;
-          height:614px;
-        }
-      }
-      .three{
-        position:absolute;
-        left:780px;
-        img{
-          width:80%;
-          height:307px;
-        }
-      }
-  }
+    }
 
+    .two{
+      position: absolute;
+      left:400px;
+      margin-top:0;
+      img{
+        width:60%;
+        height:590px;
+      }
+    }
+
+    .three{
+      position:absolute;
+      left:730px;
+      img{
+        width:90%;
+        height:300px;
+      }
+    }
+
+    .four{
+      position:absolute;
+      top:420px;
+      left:-37px;
+      width:40%;
+      img{
+        width:100%;
+        height:320px;
+      }
+    }
+
+    .five{
+      position:absolute;
+      top:520px;
+      left:315px;
+      img{
+        width:65%;
+        height:500px;
+      }
+    }
+
+    .six{
+      position:absolute;
+      top:380px;
+      left:855px;
+      img{
+        width:90%;
+      }
+    }
+
+    .seven{
+      position:absolute;
+      top:760px;
+      left:80px;
+      img{
+        width:40%;
+      }
+    }
+
+    .eight{
+      position:absolute;
+      top:740px;
+      left:680px;
+      img{
+        width:82%;
+      }
+    }
+  }
 }
+
 .crashed_mirror {
   width:100%;
   height:auto;
   position:relative;
   margin-top:100;
 }
+
 .second {
   display:block;
   width: 400px;
@@ -165,6 +157,7 @@ img{
     margin-bottom: 0px;
   }
 }
+
 .third {
   width: 400px;
   transform: rotate(44deg);

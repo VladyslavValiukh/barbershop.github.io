@@ -1,9 +1,9 @@
 body {
   padding: 0;
   margin: 0;
-font-family: 'Montserrat Alternates', sans-serif;
-height: 100%;
-width: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 header{
 background-image: url(../img/main4.jpg);
