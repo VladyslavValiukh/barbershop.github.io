@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Gugi|Roboto|Yanone+Kaffeesatz|Ubuntu|Open+Sans+Condensed:300|Lobster');
+body{
+	margin:0;
+	
+	 background-color: #f5f1dd;;
+ background-image: url(../img/texture-noise@1x.png);
+color: #111;
+}
+a{
+	text-decoration: none;
+	color:#222;}
+a:hover{
+	text-decoration:underline;
+	transition: 1s;
+}
+#heading{
+  text-align: center;
+  font-family: 'Gugi',cursive;
+}
+#up{
+  padding-top: 2%;
+  margin: 0;
+  background:url(../img/b.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;}
+  #uptext{
+
+  font-family: Roboto;
+
+  text-align: center;
+  color: #222;  
+}
+#up h1{
+  margin-bottom: 0;
+  padding-bottom: 2%; 
+}
+svg{
+  border-bottom: 2px solid #111;
+}
+#logo{
+
+  margin:auto;
+  text-align: center;
+  
+  padding: 2% 20%;
+  margin:0 20%;
+}
+.main a{
+	color: #111;
+	text-decoration: none;
+}
+.main a:hover{
+	text-decoration: underline;
+}
+button:focus{
+	outline: none;}
+#project{
+
+	font-family: Roboto;
+	text-align: center;
+	padding:0;
+    margin-right: auto;
+    margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+#uptext{
+	font-family: Roboto;
+padding:2% 3%;
+	text-align: center;
+	color: #222  ;	
+}
+
+
+.column{
+
+	margin: 0px 10%;
+	margin-bottom: 0%;
+    float: left;
+    padding: 1%;
+
+}
+
+.block{
+	background-image: url(../img/texture-noise@1x.png);
+ background-color: #e7ded3;
+	padding-right: 1%;
+	border: 2px solid black;
+	display: flex;
+}
+.img img{
+  padding-top: 1%;
+  padding-left: 1%;
+}
+.img{
+	padding: 1%;
+
+}
+.side{
+	padding: 1%;
+	padding-left: 1%;
+	display: flex;
+	flex-direction: column;
+	
+}
+.upside{
+	font-family:  Roboto;
+   
+    text-transform: uppercase;
+    color: black;
+
+	display: flex;
+	justify-content: space-between;
+			
+}
+.main p{
+  word-spacing: 1px;
+	text-align: left;
+	font-family: Roboto;
+    line-height:1.5;
+	font-size: 16px;
+	
+		
+}
+.upside2{
+	padding-right: 2%;
+}
+.upside2 h2{
+
+font-family: 'Open Sans Condensed', sans-serif;
+padding:5px 25px;
+color:white;
+background-color: #262216;
+font-size: 24px;
+}
+
+.button-container-2 {
+
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 0;
+  overflow: hidden;
+  
+  font-family:Roboto;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  background: #97743a;
+}
+.button-container-2 button {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #d1d1d1;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+.button-container-2 button:hover {
+	border: 2px solid black;
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+
+}
+
+
+.mas {
+
+	padding-top: 1px;
+	padding-right: 1px;
+  text-decoration: bold;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-family: Roboto ;
+ 
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@media(min-width: 0px) and (max-width: 720px){
+	body{
+		max-width: 100%;
+		width: 100%;
+		margin:0;
+	}
+	.block{
+		display: flex;
+		flex-direction: column;
+
+	}
+	#project{
+		padding: 0;
+		margin:0;
+	}
+	#up{
+background-size: cover;
+	}
+	.upside{
+		flex-direction: column;
+	}
+	.column{
+		margin:0;
+	}
+}
